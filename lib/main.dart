@@ -90,19 +90,15 @@ class _MyHomePageState extends State<TypographyCatalog> {
   }
 }
 
-class ServiceInfo extends StatefulBuilder {
+class ServiceInfo extends StatelessWidget {
   const ServiceInfo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final arguments = context.arguments.index
     return Scaffold(
       appBar: AppBar(
         title: Text('Информация о услуге'),
       ),
-      body: Center(
-        Text('Услуга № ')
-      )
     );
   }
 }
